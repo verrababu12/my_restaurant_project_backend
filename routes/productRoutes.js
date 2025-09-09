@@ -17,6 +17,7 @@ router.post("/add-products", addProducts);
 router.post("/only-admin", protect, admin, createProduct);
 router.put("/:id", protect, admin, updateProduct);
 router.delete("/:id", protect, admin, deleteProduct);
+router.get("/allProductsToAdmin", allProductsToAdmin);
 router.get("/", getProducts);
 router.get("/:restaurant_id", getProductsById);
 router.get("/allProductsToAdmin", allProductsToAdmin);
